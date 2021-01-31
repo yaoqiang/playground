@@ -1,0 +1,633 @@
+{
+    "version": "1.4.0",
+    "project": {
+        "name": "root-test",
+        "directory": "/Users/yaoqiang/workspace/se/playground/code/cake-pattern",
+        "workspaceDir": "/Users/yaoqiang/workspace/se/playground/code/cake-pattern",
+        "sources": [
+            "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/src/test/scala",
+            "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/src/test/scala-2.13",
+            "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/src/test/scala-2",
+            "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/src/test/java",
+            "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/target/scala-2.13/src_managed/test"
+        ],
+        "dependencies": [
+            "root"
+        ],
+        "classpath": [
+            "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/.bloop/root/scala-2.13/classes",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest_2.13/3.2.2/scalatest_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-core_2.13/3.2.2/scalatest-core_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-featurespec_2.13/3.2.2/scalatest-featurespec_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-flatspec_2.13/3.2.2/scalatest-flatspec_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-freespec_2.13/3.2.2/scalatest-freespec_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-funsuite_2.13/3.2.2/scalatest-funsuite_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-funspec_2.13/3.2.2/scalatest-funspec_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-propspec_2.13/3.2.2/scalatest-propspec_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-refspec_2.13/3.2.2/scalatest-refspec_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-wordspec_2.13/3.2.2/scalatest-wordspec_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-diagrams_2.13/3.2.2/scalatest-diagrams_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-matchers-core_2.13/3.2.2/scalatest-matchers-core_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-shouldmatchers_2.13/3.2.2/scalatest-shouldmatchers_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-mustmatchers_2.13/3.2.2/scalatest-mustmatchers_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-reflect/2.13.4/scala-reflect-2.13.4.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-compatible/3.2.2/scalatest-compatible-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalactic/scalactic_2.13/3.2.2/scalactic_2.13-3.2.2.jar",
+            "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.jar"
+        ],
+        "out": "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/.bloop/root",
+        "classesDir": "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/.bloop/root/scala-2.13/test-classes",
+        "resources": [
+            "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/src/test/resources",
+            "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/target/scala-2.13/resource_managed/test"
+        ],
+        "scala": {
+            "organization": "org.scala-lang",
+            "name": "scala-compiler",
+            "version": "2.13.4",
+            "options": [
+                
+            ],
+            "jars": [
+                "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-compiler/2.13.4/scala-compiler-2.13.4.jar",
+                "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4.jar",
+                "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-reflect/2.13.4/scala-reflect-2.13.4.jar",
+                "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/jline/jline/3.16.0/jline-3.16.0.jar",
+                "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar"
+            ],
+            "analysis": "/Users/yaoqiang/workspace/se/playground/code/cake-pattern/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip",
+            "setup": {
+                "order": "mixed",
+                "addLibraryToBootClasspath": true,
+                "addCompilerToClasspath": false,
+                "addExtraJarsToClasspath": false,
+                "manageBootClasspath": true,
+                "filterLibraryFromClasspath": true
+            }
+        },
+        "java": {
+            "options": [
+                
+            ]
+        },
+        "test": {
+            "frameworks": [
+                {
+                    "names": [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options": {
+                "excludes": [
+                    
+                ],
+                "arguments": [
+                    
+                ]
+            }
+        },
+        "platform": {
+            "name": "jvm",
+            "config": {
+                "home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
+                "options": [
+                    "-Duser.dir=/Users/yaoqiang/workspace/se/playground/code/cake-pattern"
+                ]
+            },
+            "mainClass": [
+                
+            ]
+        },
+        "resolution": {
+            "modules": [
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b6781c71dfe4a3d5980a514eec8a513f693ead95"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "69007f50916f311991fc29b47448d475b9ed5543"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-library",
+                    "version": "2.13.4",
+                    "configurations": "optional",
+                    "artifacts": [
+                        {
+                            "name": "scala-library",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b6781c71dfe4a3d5980a514eec8a513f693ead95"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4.jar"
+                        },
+                        {
+                            "name": "scala-library",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "69007f50916f311991fc29b47448d475b9ed5543"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-library/2.13.4/scala-library-2.13.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "922b2d8f4c0754fa0b2ab9bfe670aa51a1d084cb"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-reflect/2.13.4/scala-reflect-2.13.4.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "c141d5dae75b3330732603fa3828536e379c898e"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/scala-reflect/2.13.4/scala-reflect-2.13.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "e89853f1c8f326edabe6df83fe60b98e1af75ada"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest_2.13/3.2.2/scalatest_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "afd6c2b00122dbee64b84582e63aa28310d0927f"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest_2.13/3.2.2/scalatest_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-core_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-core_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b7bb0e4a060988a81eff3ac4940349561eb5e645"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-core_2.13/3.2.2/scalatest-core_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-core_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "18974e0b4e6d3d6e7c7b695d8fe6abbb0805a910"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-core_2.13/3.2.2/scalatest-core_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-featurespec_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-featurespec_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "aa7ac51425ba8388888515d47940ad1a579560be"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-featurespec_2.13/3.2.2/scalatest-featurespec_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-featurespec_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "1a9d9f93739a1e6f37d8a5604539bffa4d5b7303"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-featurespec_2.13/3.2.2/scalatest-featurespec_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-flatspec_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-flatspec_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "2412a8f60fe162202867d1794e03b0dda803386c"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-flatspec_2.13/3.2.2/scalatest-flatspec_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-flatspec_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "0bc6a6371ce8177bc3758fb16b527d4c097ee5b3"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-flatspec_2.13/3.2.2/scalatest-flatspec_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-freespec_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-freespec_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "aaf8e7bf4d4168153d9974fa74493b2998fdddcb"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-freespec_2.13/3.2.2/scalatest-freespec_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-freespec_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "55bcf248c00bacfd82f88160b0472100dca03693"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-freespec_2.13/3.2.2/scalatest-freespec_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funsuite_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funsuite_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "8a0026ac54aaf1276967b1d610e8f485846b009d"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-funsuite_2.13/3.2.2/scalatest-funsuite_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-funsuite_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "1033c9dbecfccb40cf0b3bd2410d1a6ddcaa28af"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-funsuite_2.13/3.2.2/scalatest-funsuite_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-funspec_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-funspec_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "74196ba8d5b49211680f49ce514a4d66eaf3d4de"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-funspec_2.13/3.2.2/scalatest-funspec_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-funspec_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ff15de7086ddb168674d4ca6679aac7f68b34897"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-funspec_2.13/3.2.2/scalatest-funspec_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-propspec_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-propspec_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "91860cd1a8df9ee89d9d46781127e835888fa579"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-propspec_2.13/3.2.2/scalatest-propspec_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-propspec_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "636174c97bfc5d7cb1863542d470a22f959e9a6a"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-propspec_2.13/3.2.2/scalatest-propspec_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-refspec_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-refspec_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "8069c600af6d8585c653e536236f74011628a89f"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-refspec_2.13/3.2.2/scalatest-refspec_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-refspec_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "5a2745fef0b480e46dd17ae8d586be28e9b66a31"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-refspec_2.13/3.2.2/scalatest-refspec_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-wordspec_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-wordspec_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "3692a1831432fad1351cf27458dfe43f3ae693f0"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-wordspec_2.13/3.2.2/scalatest-wordspec_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-wordspec_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "656d7dbd3c323fe1ba652d38145d75c0d8e8bafb"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-wordspec_2.13/3.2.2/scalatest-wordspec_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-diagrams_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-diagrams_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "bc0c782a97f1f052345c5c4b7f2e9c28d4fe89c0"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-diagrams_2.13/3.2.2/scalatest-diagrams_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-diagrams_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "9f1073f792efcff7b791d57111658c9d8fbc34bc"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-diagrams_2.13/3.2.2/scalatest-diagrams_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-matchers-core_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-matchers-core_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "b9d15ea36b943b6a4c8e354f34ee620442704f66"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-matchers-core_2.13/3.2.2/scalatest-matchers-core_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-matchers-core_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "f79c628656f9fda4bb5130c7574a278ea3b6a6af"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-matchers-core_2.13/3.2.2/scalatest-matchers-core_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-shouldmatchers_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-shouldmatchers_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "78d765d47de5a5be9ea8b3e7f5b17d0e0d246b48"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-shouldmatchers_2.13/3.2.2/scalatest-shouldmatchers_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-shouldmatchers_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "18d8c2df81f143c06441736711620dcd2385585b"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-shouldmatchers_2.13/3.2.2/scalatest-shouldmatchers_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-mustmatchers_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-mustmatchers_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ef6b86b08219db81718c2dda4b010117183d99d9"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-mustmatchers_2.13/3.2.2/scalatest-mustmatchers_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-mustmatchers_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "cd09e4ca75df0ab6f4d19ec1e8900d9f08c19d0b"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-mustmatchers_2.13/3.2.2/scalatest-mustmatchers_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalatest",
+                    "name": "scalatest-compatible",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalatest-compatible",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "5be1c5e22a0a2a5caba1c6ffe15492e5ea6fcb4d"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-compatible/3.2.2/scalatest-compatible-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalatest-compatible",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "60215b6dd5cc91d6faf8004c932bd5420e1fa5d3"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalatest/scalatest-compatible/3.2.2/scalatest-compatible-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scalactic",
+                    "name": "scalactic_2.13",
+                    "version": "3.2.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scalactic_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "ad9f8af98c885ad25cdc87073b8c328d196ae9d1"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalactic/scalactic_2.13/3.2.2/scalactic_2.13-3.2.2.jar"
+                        },
+                        {
+                            "name": "scalactic_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "51d5a7005d6f89c7a56732e45590145f1c3a60fe"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scalactic/scalactic_2.13/3.2.2/scalactic_2.13-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-xml_2.13",
+                    "version": "1.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-xml_2.13",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "f6abd60d28c189f05183b26c5363713d1d126b83"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0.jar"
+                        },
+                        {
+                            "name": "scala-xml_2.13",
+                            "classifier": "sources",
+                            "checksum": {
+                                "type": "sha1",
+                                "digest": "7a7c99769f3823091a150378f37a1d7b7ed73055"
+                            },
+                            "path": "/Users/yaoqiang/Library/Caches/Coursier/v1/https/repo.huaweicloud.com/repository/maven/org/scala-lang/modules/scala-xml_2.13/1.2.0/scala-xml_2.13-1.2.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags": [
+            "test"
+        ]
+    }
+}
