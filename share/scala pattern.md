@@ -17,10 +17,10 @@ Scala里的设计模式
 
 # 聊聊这些
 
-- :memo: 单例模式
-- :factory: Builder模式
+- :key: 单例模式
+- :tokyo_tower: Builder模式
 - :tv: 装饰器模式
-- :gear: Cake pattern
+- :cake: Cake pattern
 - and more...
 
 `有工程的地方就有设计模式`
@@ -144,6 +144,12 @@ public class Rectangle implements Shape {
 
 ...
 
+Shape circle = new Circle();
+Shape redCircle = new RedShapeDecorator(new Circle());
+Shape redRectangle = new RedShapeDecorator(new Rectangle());
+
+...
+
 ```
 
 ![bg right 95%](https://www.tutorialspoint.com/design_pattern/images/decorator_pattern_uml_diagram.jpg)
@@ -154,21 +160,19 @@ Scala可以这样
 
 ```scala
 object MixinPattern extends App {
-    trait ShapeDecorator { self: Shape => 
-        private def setRedBorder(decoratedShape: Shape) = println("Border Color: Red")
-
-        override def draw() = {
-            self.draw()
-            setRedBorder(self)
-        }
+  trait ShapeDecorator extends Shape { self =>
+    private def setRedBorder(s: Shape): Unit = println("red border.")
+    abstract override def draw(): Unit = {
+      super.draw()
+      setRedBorder(self)
     }
-
-    val circle = new Circle() with ShapeDecorator
-    val rectangle = new Rectangle() with ShapeDecorator
+  }
+  val circle = new Circle with ShapeDecorator
+  circle.draw()
 }
 ```
 
-`What??? Mixin!!! trait牛逼!!!`
+`What??? Mixin!!! trait真香`:ox:
 
 > Self-types: Scala编程语言有许多方法来处理类型之间的依赖关系。所谓的`self-type`允许我们使用traits和mixin的概念来声明依赖关系
 
@@ -190,31 +194,31 @@ object MixinPattern extends App {
 ## Self-type
 
 ```scala
-trait B {
-  this: A with Cake =>
-  def b = ???
-  //cyclic dependency, access trait Cake
-  cake
+trait MyTrait { self => }
+// is equivalent to
+trait MyTrait2 {
+  private val self = this
 }
+```
 
-trait A {
-  this: B =>
-  def a = ???
+```scala
+trait Function1Option[-A, +B] { self =>
+  def apply(a: A): Option[B]
+  final def andThen[C](that: Function1Option[B, C]): Function1Option[A, C] =
+    new Function1Option[A, C] {
+      override def apply(a: A): Option[C] = this.apply(a) match {
+        case Some(b) => that.apply(b)
+        case None => None
+      }
+    }
 }
-
-trait Cake {
-    this: B
-    // access members of trait A 
-    a
-    // access members of trait B???
-    b
-}
-
-// 如果A依赖了B, 则在A的实现中必须把B mixin进去, 否则编译失败(error: illegal inheritance)
-class AClass extends A with B {
-    //可以访问B的成员
-    b
-}
+// <console>:21: error: type mismatch;
+//  found   : b.type (with underlying type C)
+//  required: B
+//                case Some(b) => that.apply(b)
+//                                           ^       
+...
+override def apply(a: A): Option[C] = self.apply(a) match { ...
 ```
 
 ---
@@ -222,7 +226,29 @@ class AClass extends A with B {
 ## Cake pattern example
 
 ```scala
+trait C {
+  this: A with Cake =>
+  def c = ???
+  //cyclic dependency, access trait Cake
+  cake
+}
+trait B {
+  this: C =>
+  def b = ???
+}
 
+trait A {
+  this: B =>
+  def a = ???
+  // access members of trait B
+  b
+  // access members of trait C???
+  c
+}
+// 如果Cake依赖了A, 则在Cake的实现中必须把A mixin进去, 否则编译失败(error: illegal inheritance, self-type xxx),以此类推
+class Cake extends A with B with C {
+  def cake = ???
+}
 ```
 
 > 在playframework中默认的DI是Guice(runtime DI), 也可以用cake来实现一个play的DI
