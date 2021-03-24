@@ -79,7 +79,7 @@ theme: default
 - 样例类和模式匹配 `case class`
 - 特质 `trait`
 - 高阶函数 `map, flatMap, filter, fold, zip...`
-- 标点符号自由
+- 标点符号自由 `+, -, *, /, !, ?...`
 - 并发控制 `future, actor`
 
 ---
@@ -130,8 +130,7 @@ val f: Float = 3.0
 String and Char
 
 ```scala
-// 16-bit unsigned Unicode character (0 to 2^16-1, inclusive)
-0 to 65,535
+// 16-bit unsigned Unicode character (0 to 65,535)
 val c: Char = 'a'
 // a sequence of `Char`
 val name: String = "Bill"
