@@ -375,3 +375,5 @@ val update = device
 ---
 
 # Enjoy scala! :v: <!--fit-->
+
+[传送门 - Scala教学](https://se-ds.visualstudio.com/Common/_wiki/wikis/%E4%BA%A7%E5%93%81.wiki/5638/Scala%E6%95%99%E5%AD%A6)
