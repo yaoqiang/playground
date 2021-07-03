@@ -11763,3 +11763,8 @@ Caused by: java.net.SocketException: Socket closed
 [0m2021.02.01 22:57:55 INFO  compiling root (1 scala source)[0m
 [0m2021.02.01 22:57:59 WARN  1 deprecation (since 2.13.0); re-run with -deprecation for details[0m
 [0m2021.02.01 22:57:59 INFO  time: compiled root in 3.78s[0m
+[0m2021.02.03 21:47:05 INFO  shutting down Metals[0m
+[0m2021.02.03 21:47:05 INFO  Shut down connection with build server.[0m
+[0m2021.02.03 21:47:05 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
