@@ -15,9 +15,9 @@
             ↓
 */
 
+// `:w`，`:q`，`:wq`，`:x`，`:q!` - 学会保存/退出
 
-// 选择单词 `w`和`b`
-
+// 选择单词 `w`和`b`
 
 // 编辑
 
@@ -41,10 +41,15 @@
 // 查找 `/username` + `Enter`
 // `ci)` 替换整个参数
 
-case class Token
+case class Token(secret: String) {
+  def apply() = ???
+  def unapply(): Unit = {
+    ???
+  }
+}
 
 def login(username: String, password: String) = {
-    if (isValid(username, password)) println("succeed")
+   if (isValid(username, password)) println("succeed")
 }
 
 def isValid(username: String, password: String) = true
@@ -53,13 +58,13 @@ def token(token: Token) = true
 
 // VISUAL MODE
 
-// `Vjj` + `gcc`，选中代码块，注释/取消注释
+// `Vjj`，选中代码块，注释/取消注释
 // `vip`
 
 // `zc`, `zo`, `折叠代码块
 
 def comment() = {
-   println("comment")
+   println("-comment-")
 }
 
 
@@ -69,9 +74,14 @@ def comment() = {
 // `*` 查找光标选中的内容
 // `n` 下一个，`N` 上一个
 
+// 插件：easy-motion
+// 插件：surround
 
-// `Ctrl+v`, `jj`
-// 
+// `V` + `jjj`
+// :s/\d\"\0"/ 使用正则
+
+// `Ctrl+v`, `jj`，选中列
+
 
 var zzone = "1";
 var zztwo = "2";

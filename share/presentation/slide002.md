@@ -4,19 +4,17 @@
         / /_/ / /_/ / ___ |/ /___
         \____/\____/_/  |_/_____/
 
-        • 省点鼠标钱
+        · 省点鼠标钱
 
-        • 在班车上coding ;(
+        · 效率++
 
-        • 效率++
+        · with IDEA / Visual Studio Code ...
 
-        • with IDEA / Visual Studio Code ...
+        · 假装是一个hacker
 
-        • 假装是一个hacker
+        · 你的.vimrc
 
-        • 你的.vimrc
-
-        • more
+        · more
 
 
 

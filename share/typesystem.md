@@ -12,7 +12,7 @@ Bertrand Russell（罗素）& [ZFC](https://en.wikipedia.org/wiki/Zermelo%E2%80%
 - 如果我们想定义一个函数，我们将定义它操作的类型：例如
 times2 : nat → nat
 
-> f: X → Y read as: f is a function from XX (domain) to YY (codomain).
+> f : X → Y read as: f is a function from X (domain) to Y (codomain).
 
 - 可以使用明确定义的规则转换术语：例如
 2 + 2 ↠ 4 和 2 + 2 = 4, 他们的类型是相同的
@@ -32,11 +32,23 @@ times2 : nat → nat
 
 ## In Programming Language
 
-**类型系统其实就是，对类型进行定义、检查和处理的系统。**
+**什么是类型系统？ - wikipedia**
+
+> a set of rules that assigns a property called a type to the various constructs of a computer program, such as variables, expressions, functions or modules.
+> 
+> These types formalize and enforce the otherwise implicit categories the programmer uses for algebraic data types, data structures, or other components
+
+*类型系统其实就是，对类型进行定义、检查和处理的系统。*
 
 作为一门语言的核心要素，类型系统很大程度上塑造了语言的用户体验以及程序的安全性。为什么这么说？因为，在机器码的世界中，没有类型而言，指令仅仅和立即数或者内存打交道，内存中存放的数据都是字节流。
 
 所以，可以说类型系统完全是一种工具，编译器在编译时对数据做静态检查，或者语言在运行时对数据做动态检查的时候，来保证某个操作处理的数据是开发者期望的数据类型。
+
+*Type Systems Landscape*
+
+![type system landscape](img/typesystemlandscape.png)
+
+![static type system](img/statictypesystem.png)
 
 ## In Scala
 
