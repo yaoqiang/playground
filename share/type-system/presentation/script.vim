@@ -17,4 +17,6 @@ noremap <Right> :bn<CR>
 noremap Q :q<CR>
 
 b 1
+b 2
+b 3
 b 1

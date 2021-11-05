@@ -1,5 +1,4 @@
         
-
         从历史上看，数学，逻辑学，集合论，类型论。
 
         Bertrand Russell（罗素）& ZFC
@@ -97,5 +96,4 @@
 
 
 
-
-slide 001
+slide 002
