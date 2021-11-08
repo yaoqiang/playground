@@ -61,10 +61,11 @@ times2 : nat → nat
 
 ![static type system](img/statictypesystem.png)
 
-`强类型、弱类型`强调开发体验, `静态类型、动态类型`强调在哪个期间干活（编译器/解释器）
+- 强类型、弱类型：强调开发体验，定义后能否被隐式转换
 
+- 静态类型、动态类型：强调在哪个期间做类型检查（编译期间/运行期间、编译器/解释器）
 
-- Named Type - class/interface/trait/object/enum.
+## Named Type/Nominal typing - class/interface/trait/object/enum
 
 in scala
 
@@ -79,9 +80,80 @@ in typescript
 class Person {}
 interface Service { peaceful?: boolean; }
 ```
-  
 
-- Union/Intersection Type
+## Parameterized Type
+
+顾名思义：参数化类型，简单讲，它可以是泛型。
+
+in scala
+
+```scala
+sealed abstract List[+A]
+```
+
+in java
+
+```java
+public <T> List<T> fromArrayToList(T[] a) {   
+    return Arrays.stream(a).collect(Collectors.toList());
+}
+```
+
+in rust
+
+```rust
+fn largest<T>(list: &[T]) -> T {}
+```
+
+in ts
+
+```typescript
+function identity<Type>(arg: Type): Type {
+  return arg;
+}
+```
+
+泛型概念较多，型变、不变、协变、逆变; use-site、declaration-site等等，就不在这里具体展开了
+
+具体语言实现方式各有千秋：静态分派，动态分派，类型擦除
+
+## Existential Type
+
+in scala
+
+```scala
+sealed trait Existential {
+   type Inner
+   val value: Inner
+}
+
+case class PrepareExistential[A](value: A) extends Existential {
+  type Inner = A
+}
+
+PrepareExistential("SomeText"): Existential
+PrepareExistential(1: Int): Existential
+PrepareExistential(User): Existential
+```
+
+in Haskell
+
+```has
+```
+
+in typescript
+
+```typescript
+```
+
+in rust
+
+```rust
+```
+
+
+
+## Union/Intersection Type
 
 集合论：A ∩ B = {} / A ∪ B = { a, b }
 
@@ -117,11 +189,7 @@ function padLeft(value: string, padding: string | number) {
 type C = A & B
 ```
 
-- Parameterized Type - 
-
-- Existential Type - 
-
-- Higher-Kinded Type（HKT）
+## Higher-Kinded Type（HKT）
 
 译过来就是：更高级种类的类型！在FP世界推崇、惯用，在OO语言非常少见，常用来构建基础库啥的。我的理解入门：类型构造器化为实际类型
 
@@ -167,7 +235,7 @@ export interface Functor<F> {
 }
 ```
 
-- ADTs(Algebraic data types)
+## ADTs(Algebraic data types)代数数据类型
 
 函数式语言的概念，名字很高大上，其实含义很简单，是使用`ands`和`ors`表示数据的惯用方法。
 
@@ -217,18 +285,14 @@ in typescript
 type Sahpe<T> = Rectangle | Circle<T>;
 ```
 
-**Top / Bottom Type**
-
-满足集合论
-
-Any, Object, null, undefined, Nothing, Null...
-
-**Duck typing**
-
-**类型安全**
 
 
-**类型擦除**
+| 概念              | 理论意义   | 具体                                                         |
+| ----------------- | ---------- | ------------------------------------------------------------ |
+| Top / Bottom Type | 满足集合论 | Any, Object, null, undefined, Nothing, Null, Unit..          |
+| Duck typing       | 弱类型世界 | Python, Javascript……                                         |
+| Type Safety       | 强类型世界 | 从内存的角度看，类型安全是指代码，只能按照被允许的方法，访问它被授权访问的内存。 |
+| Type Erasure      | 泛型背后   | Java，C#，C++                                                |
 
 
 
