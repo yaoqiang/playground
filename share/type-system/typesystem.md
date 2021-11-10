@@ -1,6 +1,10 @@
-# 类型系统
+## 类型系统
 
 ![typegame](img/typegame.jpg "type game")
+
+类型是啥？从小被教导这是什么形状，进行分类…… 类型化……
+
+
 
 ## 类型由来
 
@@ -23,7 +27,7 @@ times2 : nat → nat
 
 
 
-## 类型直觉
+## 直觉类型论
 
 类型论与集合论并行存在：
 
@@ -35,6 +39,7 @@ times2 : nat → nat
 如果我们定义了一组除自身之外的所有值，在类型理论中，我们将其称为顶级类型：包含所有其他类型（是其超类型）的类型。类似地，空集将有一个底部类型形式的对应物。为了更容易记住，将类型想象成一个层次结构，其中更通用（较少限制）的类型在上面，更具体（有更多要求）在下面。然后没有要求的类型将位于顶部并包含所有值，而底部的类型及其上方所有类型的要求（必须是矛盾的）将是空的
 
 > top type, bottom type
+
 
 
 ## In Programming Language
@@ -65,7 +70,11 @@ times2 : nat → nat
 
 - 静态类型、动态类型：强调在哪个期间做类型检查（编译期间/运行期间、编译器/解释器）
 
-## Named Type/Nominal typing - class/interface/trait/object/enum
+  
+
+### Named Type/Nominal typing
+
+就是直白的，基本的类型定义，例如class/interface/trait/object/enumeration
 
 in scala
 
@@ -81,7 +90,11 @@ class Person {}
 interface Service { peaceful?: boolean; }
 ```
 
-## Parameterized Type
+
+
+
+
+### Parameterized type
 
 顾名思义：参数化类型，简单讲，它可以是泛型。
 
@@ -105,7 +118,7 @@ in rust
 fn largest<T>(list: &[T]) -> T {}
 ```
 
-in ts
+in typescript
 
 ```typescript
 function identity<Type>(arg: Type): Type {
@@ -117,43 +130,75 @@ function identity<Type>(arg: Type): Type {
 
 具体语言实现方式各有千秋：静态分派，动态分派，类型擦除
 
-## Existential Type
+
+
+### Dependent type
+
+依赖类型通过使程序员能够分配进一步限制可能实现集的类型来帮助减少错误；简单讲，就是提升类型推导能力
 
 in scala
 
 ```scala
-sealed trait Existential {
-   type Inner
-   val value: Inner
+class X {
+  type Y = String
+  val y: Y = "y"
 }
 
-case class PrepareExistential[A](value: A) extends Existential {
-  type Inner = A
-}
+val x1 = new X
+val x2 = new X
 
-PrepareExistential("SomeText"): Existential
-PrepareExistential(1: Int): Existential
-PrepareExistential(User): Existential
-```
+def y(x: X)(y: x.Y): Unit = ()
 
-in Haskell
+y(x1)(x2.y) // no complaints: x1.Y = String = x2.Y
 
-```has
-```
-
-in typescript
-
-```typescript
-```
-
-in rust
-
-```rust
+// 在Java中，编译是通过的
 ```
 
 
 
-## Union/Intersection Type
+### Existential Type
+
+存在的类型，其目的是提升抽象能力，更方便扩展，也是多在函数式编程语言常见，在OOP中有点像接口，但比接口更强大优雅
+
+in haskell - 是一种将一组类型“压缩”为一个单一类型的方法
+
+```haskell
+{-# LANGUAGE ExistentialQuantification #-}
+
+-- s. 就是type
+data ShowBox = forall s. Show s => SB s
+         
+hList :: [ShowBox]
+hList = [SB "a", SB (), SB 5, SB True]
+
+instance Show ShowBox where
+    show (SB s) = show s
+    
+f :: [ShowBox] -> IO ()
+f xs = mapM_ print xs
+
+main = f hList
+
+{- print
+"a"
+()
+5
+True
+-}
+```
+
+in scala
+
+```scala
+// scala 2.13.x
+List[T] forSome { type T }
+
+// Dotty(scala 3) dropped Existential type
+```
+
+
+
+### Union/Intersection Type
 
 集合论：A ∩ B = {} / A ∪ B = { a, b }
 
@@ -189,7 +234,9 @@ function padLeft(value: string, padding: string | number) {
 type C = A & B
 ```
 
-## Higher-Kinded Type（HKT）
+
+
+### Higher-Kinded Type（HKT）
 
 译过来就是：更高级种类的类型！在FP世界推崇、惯用，在OO语言非常少见，常用来构建基础库啥的。我的理解入门：类型构造器化为实际类型
 
@@ -235,7 +282,9 @@ export interface Functor<F> {
 }
 ```
 
-## ADTs(Algebraic data types)代数数据类型
+
+
+### ADTs(Algebraic data types)代数数据类型
 
 函数式语言的概念，名字很高大上，其实含义很简单，是使用`ands`和`ors`表示数据的惯用方法。
 
@@ -285,7 +334,7 @@ in typescript
 type Sahpe<T> = Rectangle | Circle<T>;
 ```
 
-
+### 其他
 
 | 概念              | 理论意义   | 具体                                                         |
 | ----------------- | ---------- | ------------------------------------------------------------ |
@@ -296,7 +345,7 @@ type Sahpe<T> = Rectangle | Circle<T>;
 
 
 
-## refined sample
+## refined type sample
 
 
 
@@ -311,3 +360,6 @@ type Sahpe<T> = Rectangle | Circle<T>;
 ![type nation](img/typenotion.png "type notion")
 
 [Rust/Haskell: Higher-Kinded Types (HKT)](https://gist.github.com/CMCDragonkai/a5638f50c87d49f815b8)
+
+[Type And Programming Language]()
+
