@@ -4,9 +4,9 @@
          / /  / / /_/ / /_/ / /___
         /_/  /_/\____/_____/_____/
 
-        • Normal
-        • Insert
-        • Visual
+        · Normal
+        · Insert
+        · Visual
 
 
 

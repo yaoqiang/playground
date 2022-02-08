@@ -4,12 +4,9 @@
         / /_/ / /  / /_/ / / / / / / / / / / / /_/ / /     / _, _/ /_/ / /  __/
         \____/_/   \__,_/_/ /_/ /_/_/ /_/ /_/\__,_/_/     /_/ |_|\__,_/_/\___/
 
-                       __       __
-         _  _____ ____/ /    __/ /_  ___ ___ __ _____
-        | |/ / -_) __/ _ \  /_  __/ / _ \ _ \ // / _ \
-        |___/\__/_/ /_.__/   /_/   /_//_\___\_,_/_//_/
+        · verb + noun
 
-        • 名词（动作）
+        · 名词（动作）
 
         h    Left
         j    Down
@@ -19,7 +16,7 @@
         }    Jump to the next paragraph
         $    Go to the end of the line
 
-        • 动词（操作）`:h operator`
+        · 动词（操作）`:h operator`
 
         y    Yank text (copy)
         d    Delete text and save to register

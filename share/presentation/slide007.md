@@ -1,13 +1,26 @@
-            ____  __  ____    __    _________________
-           / __ )/ / / / /   / /   / ____/_  __/ ___/
-          / __  / / / / /   / /   / __/   / /  \__ \
-         / /_/ / /_/ / /___/ /___/ /___  / /  ___/ /
-        /_____/\____/_____/_____/_____/ /_/  /____/
+          _________  ___  ____
+         / ___/ __ \/ _ \/ __/
+        / /__/ /_/ / // / _/
+        \___/\____/____/___/
 
-        • First
-        • Second
-        • Third
+        Javascript style
 
+        class Car {
+          constructor(name, year) {
+            this.name = name;
+            this.year = year;
+          }
+          age(x) {
+            return x - this.year;
+          }
+        }
+
+        let date = new Date();
+        let year = date.getFullYear();
+
+        let myCar = new Car("Ford", 2014);
+        document.getElementById("demo").innerHTML=
+        "My car is " + myCar.age(year) + " years old.";
 
 
 
